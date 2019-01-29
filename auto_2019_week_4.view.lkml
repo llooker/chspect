@@ -355,7 +355,7 @@ view: auto_2019_week_4 {
   }
 
   measure: Total_RNA {
-    label: "Total RNA"
+    label: "Total Full Year"
     group_label: "Aggregated Revenue Numbers"
     type: sum
     value_format_name: usd_0

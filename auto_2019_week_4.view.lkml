@@ -4,13 +4,13 @@ view: auto_2019_week_4 {
   dimension: Year {
     group_label: "Date"
     type: string
-    sql: ${TABLE}.string_field_0 ;;
+    sql: ${TABLE}.int64_field_0 ;;
   }
 
   dimension: Week {
     group_label: "Date"
     type: string
-    sql: ${TABLE}.string_field_1 ;;
+    sql: ${TABLE}.int64_field_1 ;;
   }
 
   dimension: Year_Week {label: "Year-Week"
@@ -82,7 +82,7 @@ view: auto_2019_week_4 {
 
   dimension: Digital_Flag {
     type: yesno
-    sql: ${TABLE}.string_field_18 ;;
+    sql: ${TABLE}.bool_field_18 ;;
   }
 
   dimension: Account_Exec_Name {
@@ -94,121 +94,121 @@ view: auto_2019_week_4 {
   dimension: Jan_RNA {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_20 ;;
+    sql: ${TABLE}.double_field_20 ;;
   }
 
   dimension: Feb_RNA {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_21 ;;
+    sql: ${TABLE}.double_field_21 ;;
   }
 
   dimension: Mar_RNA {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_22 ;;
+    sql: ${TABLE}.double_field_22 ;;
   }
 
   dimension: Apr_RNA {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_23 ;;
+    sql: ${TABLE}.double_field_23 ;;
   }
 
   dimension: May_RNA {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_24 ;;
+    sql: ${TABLE}.double_field_24 ;;
   }
 
   dimension: Jun_RNA {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_25 ;;
+    sql: ${TABLE}.double_field_25 ;;
   }
 
   dimension: Jul_RNA {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_26 ;;
+    sql: ${TABLE}.double_field_26 ;;
   }
 
   dimension: Aug_RNA {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_27 ;;
+    sql: ${TABLE}.double_field_27 ;;
   }
 
   dimension: Sep_RNA {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_28 ;;
+    sql: ${TABLE}.double_field_28 ;;
   }
 
   dimension: Oct_RNA {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_29 ;;
+    sql: ${TABLE}.double_field_29 ;;
   }
 
   dimension: Nov_RNA {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_30 ;;
+    sql: ${TABLE}.double_field_30 ;;
   }
 
   dimension: Dec_RNA {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_31 ;;
+    sql: ${TABLE}.double_field_31 ;;
   }
 
   dimension: Total_RNA {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_32 ;;
+    sql: ${TABLE}.double_field_32 ;;
   }
 
   dimension: Q1 {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_33 ;;
+    sql: ${TABLE}.double_field_33 ;;
   }
 
   dimension: Q2 {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_34 ;;
+    sql: ${TABLE}.double_field_34 ;;
   }
 
   dimension: Q3 {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_35 ;;
+    sql: ${TABLE}.double_field_35 ;;
   }
 
   dimension: Q4 {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_36 ;;
+    sql: ${TABLE}.double_field_36 ;;
   }
 
   dimension: 1H {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_37 ;;
+    sql: ${TABLE}.double_field_37 ;;
   }
 
   dimension: 2H {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_38 ;;
+    sql: ${TABLE}.double_field_38 ;;
   }
 
   dimension: YTD {
     group_label: "Revenue Numbers"
     type: string
-    sql: ${TABLE}.string_field_39 ;;
+    sql: ${TABLE}.double_field_39 ;;
   }
 
   dimension: Division {

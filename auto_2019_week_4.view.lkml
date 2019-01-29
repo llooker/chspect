@@ -79,6 +79,18 @@ view: auto_2019_week_4 {
     sql: ${TABLE}.string_field_12 ;;
     drill_fields: [detail*]
 
+    link: {
+      label: "{{value}} Detailed Dashboard"
+      url: "/dashboards/2?Name={{ value | encode_uri }}"
+      icon_url: "http://www.looker.com/favicon.ico"
+    }
+
+    link: {
+      label: "Website"
+      url: "http://www.google.com/search?q={{ value | encode_uri }}&btnI"
+      icon_url: "http://www.google.com/s2/favicons?domain=www.{{ value | encode_uri }}.com"
+    }
+
   }
 
   measure: count_of_customers {

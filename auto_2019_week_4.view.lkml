@@ -2,233 +2,282 @@ view: auto_2019_week_4 {
   sql_table_name: charter.auto_2019_week_4 ;;
 
   dimension: Year {
+    group_label: "Date"
     type: string
     sql: ${TABLE}.string_field_0 ;;
   }
 
   dimension: Week {
+    group_label: "Date"
     type: string
     sql: ${TABLE}.string_field_1 ;;
   }
 
+  dimension: Year_Week {label: "Year-Week"
+    type: string
+    sql: Concat(${Year}, '-',${Week}) ;;
+  }
+
   dimension: SRC_Market {
+    label: "SRC Market"
+    group_label: "Location"
     type: string
     sql: ${TABLE}.string_field_2 ;;
   }
 
   dimension: SLS_Market {
+    label: "SLS Market"
+    group_label: "Location"
     type: string
     sql: ${TABLE}.string_field_3 ;;
   }
 
   dimension: Sub_Region {
+    group_label: "Location"
     type: string
     sql: ${TABLE}.string_field_4 ;;
   }
 
   dimension: BI_Region {
+    group_label: "Location"
     type: string
     sql: ${TABLE}.string_field_5 ;;
   }
 
   dimension: Name {
+    group_label: "Name"
+    type: string
+    sql: ${TABLE}.string_field_12 ;;
+  }
+
+  dimension: PCMD_Name {
+    group_label: "Name"
     type: string
     sql: ${TABLE}.string_field_13 ;;
   }
 
-  dimension: PCMD_Name {
+  dimension: SCMD_Name {
+    group_label: "Name"
     type: string
     sql: ${TABLE}.string_field_14 ;;
   }
 
-  dimension: SCMD_Name {
+  dimension: Rev_Type_Code {
+    group_label: "Revenue Types and Categories"
     type: string
     sql: ${TABLE}.string_field_15 ;;
   }
 
-  dimension: Rev_Type_Code {
+  dimension: Rev_Type_Name {
+    group_label: "Revenue Types and Categories"
     type: string
     sql: ${TABLE}.string_field_16 ;;
   }
 
-  dimension: Rev_Type_Name {
+  dimension: Rev_Category_Name {
+    group_label: "Revenue Types and Categories"
     type: string
     sql: ${TABLE}.string_field_17 ;;
   }
 
-  dimension: Rev_Category_Name {
-    type: string
+  dimension: Digital_Flag {
+    type: yesno
     sql: ${TABLE}.string_field_18 ;;
   }
 
-  dimension: Digital {
+  dimension: Account_Exec_Name {
+    group_label: "Sales Team"
     type: string
     sql: ${TABLE}.string_field_19 ;;
   }
 
-  dimension: Account_Exec_Name {
+  dimension: Jan_RNA {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_20 ;;
   }
 
-  dimension: Jan_RNA {
+  dimension: Feb_RNA {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_21 ;;
   }
 
-  dimension: Feb_RNA {
+  dimension: Mar_RNA {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_22 ;;
   }
 
-  dimension: Mar_RNA {
+  dimension: Apr_RNA {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_23 ;;
   }
 
-  dimension: Apr_RNA {
+  dimension: May_RNA {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_24 ;;
   }
 
-  dimension: May_RNA {
+  dimension: Jun_RNA {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_25 ;;
   }
 
-  dimension: Jun_RNA {
+  dimension: Jul_RNA {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_26 ;;
   }
 
-  dimension: Jul_RNA {
+  dimension: Aug_RNA {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_27 ;;
   }
 
-  dimension: Aug_RNA {
+  dimension: Sep_RNA {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_28 ;;
   }
 
-  dimension: Sep_RNA {
+  dimension: Oct_RNA {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_29 ;;
   }
 
-  dimension: Oct_RNA {
+  dimension: Nov_RNA {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_30 ;;
   }
 
-  dimension: Nov_RNA {
+  dimension: Dec_RNA {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_31 ;;
   }
 
-  dimension: Dec_RNA {
+  dimension: Total_RNA {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_32 ;;
   }
 
-  dimension: Total_RNA {
+  dimension: Q1 {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_33 ;;
   }
 
-  dimension: Q1 {
+  dimension: Q2 {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_34 ;;
   }
 
-  dimension: Q2 {
+  dimension: Q3 {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_35 ;;
   }
 
-  dimension: Q3 {
+  dimension: Q4 {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_36 ;;
   }
 
-  dimension: Q4 {
+  dimension: 1H {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_37 ;;
   }
 
-  dimension: 1H {
+  dimension: 2H {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_38 ;;
   }
 
-  dimension: 2H {
+  dimension: YTD {
+    group_label: "Revenue Numbers"
     type: string
     sql: ${TABLE}.string_field_39 ;;
   }
 
-  dimension: YTD {
+  dimension: Division {
+    group_label: "Location"
     type: string
     sql: ${TABLE}.string_field_40 ;;
   }
 
-  dimension: Division {
+  dimension: Region {
+    group_label: "Location"
     type: string
     sql: ${TABLE}.string_field_41 ;;
   }
 
-  dimension: Region {
+  dimension: Tier {
     type: string
     sql: ${TABLE}.string_field_42 ;;
   }
 
-  dimension: Tier {
+  dimension: Revenue_Type {
+    group_label: "Revenue Types and Categories"
     type: string
     sql: ${TABLE}.string_field_43 ;;
   }
 
-  dimension: Revenue_Type {
+  dimension: DVP {
+    group_label: "Sales Team"
     type: string
     sql: ${TABLE}.string_field_44 ;;
   }
 
-  dimension: DVP {
+  dimension: VP {
+    group_label: "Sales Team"
     type: string
     sql: ${TABLE}.string_field_45 ;;
   }
 
-  dimension: VP {
+  dimension: Director {
+    group_label: "Sales Team"
     type: string
     sql: ${TABLE}.string_field_46 ;;
   }
 
-  dimension: Director {
+  dimension: ASM {
+    group_label: "Sales Team"
     type: string
     sql: ${TABLE}.string_field_47 ;;
   }
 
-  dimension: ASM {
+  dimension: DOS {
+    group_label: "Sales Team"
     type: string
     sql: ${TABLE}.string_field_48 ;;
   }
 
-  dimension: DOS {
+  dimension: LSM {
+    group_label: "Sales Team"
     type: string
     sql: ${TABLE}.string_field_49 ;;
   }
 
-  dimension: LSM {
+  dimension: Budget_Type {
     type: string
     sql: ${TABLE}.string_field_50 ;;
   }
 
-  dimension: Type {
+  dimension: Inclusion_Flag {
     type: string
     sql: ${TABLE}.string_field_51 ;;
-  }
-
-  dimension: Inclusion {
-    type: string
-    sql: ${TABLE}.string_field_52 ;;
   }
 
   measure: count {

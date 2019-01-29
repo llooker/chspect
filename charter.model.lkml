@@ -10,4 +10,4 @@ datagroup: charter_default_datagroup {
 
 persist_with: charter_default_datagroup
 
-explore: auto_2019_week_4 {}
+explore: auto_2019_week_4 {label:"Charter"}
